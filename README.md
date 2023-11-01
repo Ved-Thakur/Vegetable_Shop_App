@@ -1,93 +1,135 @@
 # Vegetable-Shop-App
 
+We have a fun practice assignment for you. 
 
 
-## Getting started
+The aim is for you to become aware of some of the technologies that the team is using and things you would need to learn once you join in. This assignment is just for you to practice and get a general idea of the technologies we use. You will be learning these technologies in detail through our in-house training once you join. 
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+This will only be a front-end application and no need to create back-end i.e., server-side code. 
 
-## Add your files
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+The assignments have some nice to have features that would be additional points for you to practice and are not mandatory. We value your time and we understand that you would be occupied with your college assignments and exams. 
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/RushabhShah20092001/vegetable-shop-app.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+Note: - You are not going to be assessed in any way based on this assignment. It is just to get you curious about the exciting work that we are doing and lots of opportunities for you to learn. 
 
-- [ ] [Set up project integrations](https://gitlab.com/RushabhShah20092001/vegetable-shop-app/-/settings/integrations)
 
-## Collaborate with your team
+The technologies that are to be/can be used for this assignment are: 
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+1. HTML 
 
-## Test and Deploy
+2. CSS3 
 
-Use the built-in continuous integration in GitLab.
+3. Typescript 
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+4. Angular 15 
 
-***
+5. Angular Material /Prime Ng   
 
-# Editing this README
+The tutorials you can use for these technologies are: 
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+https://angular.io/tutorial 
 
-## Suggestions for a good README
+https://codecraft.tv/courses/angular/quickstart/overview/ 
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-## Name
-Choose a self-explaining name for your project.
+Of course, you can refer other documents as well but we use these documentations to learn Angular. 
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Note: - It would be great if you created an activity/flow diagram of the application before starting with the implementation. 
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+In case of any questions or queries, please feel free to contact us. 
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Assignment: 
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Objective: 
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Create an application which will be used to store/sell vegetables and fruits based on the supply and demand. 
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Requirements: 
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Users: Create two static users with the following roles: 
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Vegetable Seller: An admin who manages the application, available vegetables, etc. 
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Customer: A user who will be visiting the application to buy vegetables and fruits. 
 
-## License
-For open source projects, say how it is licensed.
+Create a sign-in page which will be the very first page of the application. The sign-in form will have: 
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+- Username 
+
+- Password 
+
+- Role (should be a dropdown with options as ‘Vegetable Seller’ and ‘Customer’) 
+
+On clicking the ‘Sign In’ button, redirect the user to the further pages according to his role. 
+
+We can also have a ‘Sign Out’ button in our application. On clicking this button, redirect the user to the sign-in page. 
+
+#### For Vegetable Seller: 
+
+(1) After clicking the ‘Sign In’ button, display a form which will have the following fields: 
+
+- Group (can be a dropdown with options as ‘Vegetable’ and ‘Fruit’) 
+
+- Name 
+
+- Type (Daily Need, Exotic (e.g., broccoli), Seasonal (e.g., mango), etc.) 
+
+- Available Quantity 
+
+- Price 
+
+(2) There should be an ‘Insert’ button below the form. On clicking this button, the vegetable/fruit should get added to a list of products on a different ‘Vegetable List’ page. We can display this list as a table with 5 columns: 
+
+- Group 
+
+- Name 
+
+- Type 
+
+- Available Quantity 
+
+- Price 
+
+(3) Beside each row of the table, there should be an ‘Edit’ button. On clicking this button, redirect the vegetable seller to a form where he can edit the price and available quantity of that product. The other three fields: group, name and type should be disabled for editing. After clicking on the ‘Save’ button the product’s price/quantity should get updated in the table. 
+
+(4) Beside the ‘Edit’ button in each row, there should be a ‘Delete’ button. On clicking this button, the product (that row) should get removed from the vegetable list. 
+
+(5) There should also be an ‘Add new product’ button at the bottom of the ‘Vegetable List’ page. On clicking this button, the vegetable seller should be redirected to the initial form page. 
+
+#### For Customer: 
+
+(1) After clicking the ‘Sign In’ button, redirect the customer to the ‘Vegetable List’ page. The vegetable list (table) should not have the ‘Edit’ and ‘Delete’ buttons this time. 
+
+(2) Instead show a ‘Buy’ button beside each row of the table. On clicking this button, a popup should open in which the customer can see the name of the product, the available quantity and the price. 
+
+(3) There should also be a field in the popup where the customer can insert the quantity that he wants to buy. If the customer enters the quantity which is greater than the available quantity then he should get an error. 
+
+(4) The total price should be calculated based on this quantity. Once the purchase is successful (only a static way of clicking ‘OK’ on the popup), the available quantity in the vegetable list should get updated. 
+
+(5) We can also have a ‘Search Bar’ where the customer can search the products by Product Type. For example: If he types ‘Seasonal’ in the search bar then he should see only those vegetables/fruits whose type is ‘Seasonal.’ 
+
+### Note: 
+
+- You can create some mock data and insert it in the table by default. 
+
+- So, whenever you run the application, the table will always have some data and will not be empty. 
+
+### Hint: 
+
+- You can create an array of objects for storing this data. 
+
+### Some nice to have features are: 
+
+1. Sorting the columns of the table in ascending and descending order by using mat-table. 
+
+2. Generate a final bill after all purchase 
+
+3. ER Diagram 
+
+4. Use Angular Material for various elements like input tags, forms, buttons etc. as it is used in the projects. 
+
+5. Use AUTH Guard, to prevent unauthenticated users from accessing sensitive information. 
