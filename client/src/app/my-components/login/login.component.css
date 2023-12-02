@@ -1,0 +1,32 @@
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(233, 247, 253);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 500px;
+  background: white;
+}
+
+.form-field {
+  width: 70%;
+}
+
+h1 {
+  color: #333;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.check-div {
+  width: 70%;
+  margin-bottom: 30px;
+}
