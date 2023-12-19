@@ -1,0 +1,67 @@
+<form class="form" (ngSubmit)="onSubmit()" #form="ngForm">
+  <h1>Enter Details</h1>
+  <mat-form-field>
+    <mat-label>Group</mat-label>
+    <mat-select name="group" [(ngModel)]="group" [disabled]="isEdit" required>
+      <mat-option value="vegitable">Vegitable</mat-option>
+      <mat-option value="fruit">Fruit</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      name="name"
+      [(ngModel)]="name"
+      [disabled]="isEdit"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select name="type" [(ngModel)]="type" [disabled]="isEdit" required>
+      <mat-option value="regular">Regular</mat-option>
+      <mat-option value="exotic">Exotic</mat-option>
+      <mat-option value="seasonal">Seasonal</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quantity</mat-label>
+    <input
+      matInput
+      name="quantity"
+      type="number"
+      [(ngModel)]="quantity"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price</mat-label>
+    <input
+      matInput
+      name="price"
+      type="number"
+      aria-disabled="true"
+      [(ngModel)]="price"
+      required
+    />
+  </mat-form-field>
+  <div class="buttons">
+    <button
+      mat-raised-button
+      [mat-dialog-close]="{
+          group: this.group,
+          name: this.name,
+          type: this.type,
+          quantity: this.quantity,
+          price: this.price,
+        }"
+      color="primary"
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      OK
+    </button>
+    <button mat-raised-button color="accent" mat-dialog-close>Close</button>
+  </div>
+</form>

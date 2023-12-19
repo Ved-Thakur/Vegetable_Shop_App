@@ -1,0 +1,21 @@
+<form>
+  <h1>{{ name }}: Rs{{ price }}</h1>
+  <h1>available quantity: {{ available_quantity }}</h1>
+  <h2>select a valid quantity</h2>
+  <mat-form-field>
+    <mat-label>Quantity</mat-label>
+    <input type="number" matInput name="quantity" [(ngModel)]="quantity" />
+  </mat-form-field>
+  <h2>Total Cost: {{ quantity * price }}</h2>
+  <div class="buttons">
+    <button
+      mat-raised-button
+      color="primary"
+      [mat-dialog-close]="quantity"
+      [disabled]="!isValid()"
+    >
+      OK
+    </button>
+    <button mat-raised-button color="warn" mat-dialog-close>cancel</button>
+  </div>
+</form>

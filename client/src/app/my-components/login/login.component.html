@@ -1,9 +1,9 @@
 <div class="main">
-  <form class="login" (ngSubmit)="onSubmit()">
+  <form class="login" (ngSubmit)="onSubmit()" #form="ngForm">
     <h1>Sign in for existing users</h1>
     <mat-form-field class="form-field">
       <mat-label>Username</mat-label>
-      <input matInput name="username" [(ngModel)]="username" />
+      <input matInput name="username" [(ngModel)]="username" required />
     </mat-form-field>
     <mat-form-field class="form-field">
       <mat-label>Password</mat-label>
@@ -12,6 +12,7 @@
         [type]="showPassword ? 'text' : 'password'"
         name="password"
         [(ngModel)]="password"
+        required
       />
     </mat-form-field>
     <div class="check-div">
@@ -21,11 +22,18 @@
     </div>
     <mat-form-field class="form-field">
       <mat-label>Role</mat-label>
-      <mat-select name="role" [(ngModel)]="role">
+      <mat-select name="role" [(ngModel)]="role" required>
         <mat-option value="seller">Vegetable Seller</mat-option>
         <mat-option value="customer">Customer</mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-raised-button type="submit" color="primary">Log in</button>
+    <button
+      mat-raised-button
+      type="submit"
+      color="primary"
+      [disabled]="form.invalid"
+    >
+      Log in
+    </button>
   </form>
 </div>
