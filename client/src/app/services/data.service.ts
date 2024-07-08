@@ -19,7 +19,7 @@ export class DataService {
     if (this.data.length === 0) {
       this.data = [
         {
-          group: 'vegitable',
+          group: 'vegetable',
           name: 'dummy1',
           type: 'exotic',
           quantity: 100,

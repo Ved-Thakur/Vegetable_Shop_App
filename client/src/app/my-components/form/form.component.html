@@ -3,8 +3,8 @@
   <mat-form-field>
     <mat-label>Group</mat-label>
     <mat-select name="group" [(ngModel)]="group" [disabled]="isEdit" required>
-      <mat-option value="vegitable">Vegitable</mat-option>
-      <mat-option value="fruit">Fruit</mat-option>
+      <mat-option value="vegetable">{{ vegetable_label }}</mat-option>
+      <mat-option value="fruit">{{ fruit_label }}</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field>
@@ -20,21 +20,24 @@
   <mat-form-field>
     <mat-label>Type</mat-label>
     <mat-select name="type" [(ngModel)]="type" [disabled]="isEdit" required>
-      <mat-option value="regular">Regular</mat-option>
-      <mat-option value="exotic">Exotic</mat-option>
-      <mat-option value="seasonal">Seasonal</mat-option>
+      <mat-option *ngFor="let option of options" [value]="option.value">{{
+        option.viewValue
+      }}</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Quantity</mat-label>
+    <mat-label>{{ quantity_label }}</mat-label>
     <input
       matInput
+      [(ngModel)]="quantity"
       name="quantity"
       type="number"
-      [(ngModel)]="quantity"
+      (blur)="updateQuantityErrorMessage()"
       required
     />
   </mat-form-field>
+  <mat-error *ngIf="!validQuantity()">{{ quantityError }}</mat-error>
+
   <mat-form-field>
     <mat-label>Price</mat-label>
     <input
@@ -43,9 +46,11 @@
       type="number"
       aria-disabled="true"
       [(ngModel)]="price"
+      (blur)="updatePriceErrorMessage()"
       required
     />
   </mat-form-field>
+  <mat-error *ngIf="!validPrice()">{{ priceError }}</mat-error>
   <div class="buttons">
     <button
       mat-raised-button
@@ -58,7 +63,7 @@
         }"
       color="primary"
       type="submit"
-      [disabled]="form.invalid"
+      [disabled]="form.invalid || !isValid()"
     >
       OK
     </button>

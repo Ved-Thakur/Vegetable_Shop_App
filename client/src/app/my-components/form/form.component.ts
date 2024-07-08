@@ -1,6 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import Constants from 'src/app/constants';
 import { DataService } from 'src/app/services/data.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -10,6 +12,12 @@ import { DataService } from 'src/app/services/data.service';
 export class FormComponent {
   isEdit: boolean;
   rowData: any;
+
+  options = [
+    { value: 'regular', viewValue: 'Regular' },
+    { value: 'exotic', viewValue: 'Exotic' },
+    { value: 'seasonal', viewValue: 'Seasonal' },
+  ];
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
     this.isEdit = data.isEdit;
@@ -28,6 +36,59 @@ export class FormComponent {
   type: string = '';
   quantity: number = 0;
   price: number = 0;
+
+  // formControl = new FormControl('', [this.quantityValidator]);
+
+  // quantityValidator(control:FormControl) {
+  //   const quantity = control.value
+  //   if ( quantity!==null && quantity < 1) {
+  //     return { invalidQuantity: true };
+  //   } else {
+  //     return null;
+  //   }
+  // }
+
+  validQuantity(): boolean {
+    if (this.quantity > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  validPrice(): boolean {
+    if (this.price > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  isValid(): boolean {
+    if (this.validPrice() && this.validQuantity()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  quantityError = '';
+  updateQuantityErrorMessage() {
+    if (!this.validQuantity()) {
+      this.quantityError = 'please select a valid quantity';
+    }
+  }
+
+  priceError = '';
+  updatePriceErrorMessage() {
+    if (!this.validPrice()) {
+      this.priceError = 'please select a valid price';
+    }
+  }
+
+  quantity_label = Constants.QUANTITY_LABEL;
+  vegetable_label = Constants.VEGETABLE_LABEL;
+  fruit_label = Constants.FRUIT_LABEL;
 
   onSubmit() {}
 }
