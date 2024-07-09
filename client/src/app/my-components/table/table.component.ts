@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, Component, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { DataService } from 'src/app/services/data.service';
-import { FormComponent } from '../form/form.component';
 import { BuyComponent } from '../buy/buy.component';
+import { FormComponent } from '../form/form.component';
 import { SureComponent } from '../sure/sure.component';
 
 interface Product {
@@ -96,8 +96,8 @@ export class TableComponent {
   buy(element: Product) {
     const index = this.dataSource.data.indexOf(element);
     const pop = this.dialog.open(BuyComponent, {
-      width: '300px',
-      height: '320px',
+      width: '500px',
+      height: '500px',
       data: { element: element },
     });
     pop.disableClose = true;

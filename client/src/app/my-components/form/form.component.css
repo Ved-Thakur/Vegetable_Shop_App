@@ -12,3 +12,21 @@
   display: flex;
   justify-content: space-between;
 }
+
+#detailsLabel{
+  margin: auto;
+}
+
+#close{
+  margin: 0;
+}
+
+.topRow{
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+}
+
+mat-error{
+  margin-bottom: 10px;
+}

@@ -1,4 +1,7 @@
+
+
 form {
+  padding: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -6,4 +9,12 @@ form {
 .buttons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.topRow{
+  display: flex;
+}
+
+#close{
+  margin-left: auto;
 }

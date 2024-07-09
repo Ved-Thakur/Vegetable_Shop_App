@@ -1,8 +1,7 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import Constants from 'src/app/constants';
 import { DataService } from 'src/app/services/data.service';
-import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -19,7 +18,7 @@ export class FormComponent {
     { value: 'seasonal', viewValue: 'Seasonal' },
   ];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(private dataService: DataService,@Inject(MAT_DIALOG_DATA) public data: any) {
     this.isEdit = data.isEdit;
     if (this.isEdit) {
       this.rowData = data.rowData;
@@ -37,7 +36,9 @@ export class FormComponent {
   quantity: number = 0;
   price: number = 0;
 
-  // formControl = new FormControl('', [this.quantityValidator]);
+  
+
+  // formControl = new FormControl('', [Validators.required,this.quantityValidator()]);
 
   // quantityValidator(control:FormControl) {
   //   const quantity = control.value
@@ -91,4 +92,16 @@ export class FormComponent {
   fruit_label = Constants.FRUIT_LABEL;
 
   onSubmit() {}
+
+  cancel(){
+    if(!this.isEdit){
+    this.group = '';
+    this.name = '';
+    this.type = '';
+    }
+    this.quantity = 0;
+    this.price = 0;
+    this.quantityError=""
+    this.priceError=""
+  }
 }

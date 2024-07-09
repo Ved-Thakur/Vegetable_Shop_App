@@ -31,9 +31,10 @@
       mat-raised-button
       type="submit"
       color="primary"
-      [disabled]="form.invalid"
+      
     >
       Log in
     </button>
+    <mat-error >{{errorMessage}}</mat-error>
   </form>
 </div>

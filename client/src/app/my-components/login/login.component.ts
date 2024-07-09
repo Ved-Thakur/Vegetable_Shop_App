@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import Constants from 'src/app/constants';
-import { InvalidComponent } from '../invalid/invalid.component';
 
 interface Product {
   group: string;
@@ -23,11 +22,27 @@ export class LoginComponent {
   showPassword: boolean = false;
   role: string = '';
 
+  errorMessage:string = ""
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private dialog: MatDialog
   ) {}
+
+  displayError(): void{
+    if(!this.username){
+this.errorMessage="Please enter username"
+    }
+    else if(!this.password){
+      this.errorMessage="Please enter password"
+    }
+    else if(!this.role){
+      this.errorMessage="please select role"
+    }
+    else{
+    this.errorMessage = "Invalid credentials"
+  }}
 
   onSubmit() {
     if (
@@ -43,9 +58,7 @@ export class LoginComponent {
     ) {
       this.router.navigate(['/customer']);
     } else {
-      this.dialog.open(InvalidComponent, {
-        height: '100px',
-      });
+      this.displayError()
     }
   }
 }

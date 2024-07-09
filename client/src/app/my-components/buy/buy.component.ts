@@ -24,6 +24,11 @@ export class BuyComponent {
     }
   }
 
+  cancel():void {
+this.quantity=0
+this.errorMessage = ""
+  }
+
   errorMessage = '';
   updateErrorMessage() {
     if (this.quantity < 1) {
