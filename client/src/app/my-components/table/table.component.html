@@ -2,10 +2,16 @@
   <form>
     <mat-form-field>
       <mat-label>Product Type</mat-label>
-      <input matInput type="text" name="type" [(ngModel)]="type" />
+      <input
+        matInput
+        type="text"
+        name="type"
+        [(ngModel)]="type"
+        (keyup)="filter()"
+      />
     </mat-form-field>
 
-    <button mat-raised-button color="primary" (click)="filter()">Search</button>
+    <!-- <button mat-raised-button color="primary" (click)="filter()">Search</button> -->
     <button
       *ngIf="userType === 'seller'"
       mat-raised-button

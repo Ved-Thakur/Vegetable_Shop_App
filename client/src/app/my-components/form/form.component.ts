@@ -95,8 +95,8 @@ export class FormComponent {
       this.name = '';
       this.type = '';
     }
-    this.quantity = this.resetPrice;
-    this.price = this.resetQuantity;
+    this.quantity = this.resetQuantity;
+    this.price = this.resetPrice;
     this.quantityError = '';
     this.priceError = '';
   }
