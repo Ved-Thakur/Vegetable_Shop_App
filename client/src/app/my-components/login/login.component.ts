@@ -22,7 +22,7 @@ export class LoginComponent {
   showPassword: boolean = false;
   role: string = '';
 
-  errorMessage:string = ""
+  errorMessage: string = '';
 
   constructor(
     private router: Router,
@@ -30,19 +30,17 @@ export class LoginComponent {
     private dialog: MatDialog
   ) {}
 
-  displayError(): void{
-    if(!this.username){
-this.errorMessage="Please enter username"
+  displayError(): void {
+    if (!this.username) {
+      this.errorMessage = 'Please enter username';
+    } else if (!this.password) {
+      this.errorMessage = 'Please enter password';
+    } else if (!this.role) {
+      this.errorMessage = 'please select role';
+    } else {
+      this.errorMessage = 'Invalid credentials';
     }
-    else if(!this.password){
-      this.errorMessage="Please enter password"
-    }
-    else if(!this.role){
-      this.errorMessage="please select role"
-    }
-    else{
-    this.errorMessage = "Invalid credentials"
-  }}
+  }
 
   onSubmit() {
     if (
@@ -58,7 +56,7 @@ this.errorMessage="Please enter username"
     ) {
       this.router.navigate(['/customer']);
     } else {
-      this.displayError()
+      this.displayError();
     }
   }
 }

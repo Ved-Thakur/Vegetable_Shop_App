@@ -1,7 +1,10 @@
 <form class="form" (ngSubmit)="onSubmit()" #form="ngForm">
   <div class="topRow">
-  <h1 id="detailsLabel">Enter Details</h1>
-  <button mat-raised-button color="warn" mat-dialog-close id="close">X</button></div>
+    <h1 id="detailsLabel">Enter Details</h1>
+    <button mat-raised-button color="warn" mat-dialog-close id="close">
+      X
+    </button>
+  </div>
   <mat-form-field>
     <mat-label>Group</mat-label>
     <mat-select name="group" [(ngModel)]="group" [disabled]="isEdit" required>
@@ -36,10 +39,10 @@
       type="number"
       (blur)="updateQuantityErrorMessage()"
       required
-      />
-    </mat-form-field>
-    <mat-error *ngIf="!validQuantity()">{{ quantityError }}</mat-error>
-    
+    />
+  </mat-form-field>
+  <mat-error *ngIf="!validQuantity()">{{ quantityError }}</mat-error>
+
   <mat-form-field>
     <mat-label>Price</mat-label>
     <input
@@ -70,6 +73,5 @@
       OK
     </button>
     <button mat-raised-button color="accent" (click)="cancel()">cancel</button>
-    
   </div>
 </form>

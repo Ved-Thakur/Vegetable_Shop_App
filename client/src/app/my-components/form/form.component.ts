@@ -18,7 +18,10 @@ export class FormComponent {
     { value: 'seasonal', viewValue: 'Seasonal' },
   ];
 
-  constructor(private dataService: DataService,@Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(
+    private dataService: DataService,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {
     this.isEdit = data.isEdit;
 
     if (this.isEdit) {
@@ -28,8 +31,8 @@ export class FormComponent {
       this.type = this.rowData.type;
       this.quantity = this.rowData.quantity;
       this.price = this.rowData.price;
-      this.resetPrice = this.price
-      this.resetQuantity = this.quantity
+      this.resetPrice = this.price;
+      this.resetQuantity = this.quantity;
     }
   }
 
@@ -41,22 +44,6 @@ export class FormComponent {
   type: string = '';
   quantity: number = 0;
   price: number = 0;
-
-  
-  
-
-  
-
-  // formControl = new FormControl('', [Validators.required,this.quantityValidator()]);
-
-  // quantityValidator(control:FormControl) {
-  //   const quantity = control.value
-  //   if ( quantity!==null && quantity < 1) {
-  //     return { invalidQuantity: true };
-  //   } else {
-  //     return null;
-  //   }
-  // }
 
   validQuantity(): boolean {
     if (this.quantity > 0) {
@@ -102,15 +89,15 @@ export class FormComponent {
 
   onSubmit() {}
 
-  cancel(){
-    if(!this.isEdit){
-    this.group = '';
-    this.name = '';
-    this.type = '';
+  cancel() {
+    if (!this.isEdit) {
+      this.group = '';
+      this.name = '';
+      this.type = '';
     }
     this.quantity = this.resetPrice;
     this.price = this.resetQuantity;
-    this.quantityError=""
-    this.priceError=""
+    this.quantityError = '';
+    this.priceError = '';
   }
 }

@@ -24,9 +24,9 @@ export class BuyComponent {
     }
   }
 
-  cancel():void {
-this.quantity=0
-this.errorMessage = ""
+  cancel(): void {
+    this.quantity = 0;
+    this.errorMessage = '';
   }
 
   errorMessage = '';
