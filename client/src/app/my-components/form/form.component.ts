@@ -20,6 +20,7 @@ export class FormComponent {
 
   constructor(private dataService: DataService,@Inject(MAT_DIALOG_DATA) public data: any) {
     this.isEdit = data.isEdit;
+
     if (this.isEdit) {
       this.rowData = data.rowData;
       this.group = this.rowData.group;
@@ -27,14 +28,22 @@ export class FormComponent {
       this.type = this.rowData.type;
       this.quantity = this.rowData.quantity;
       this.price = this.rowData.price;
+      this.resetPrice = this.price
+      this.resetQuantity = this.quantity
     }
   }
+
+  resetQuantity: number = 0;
+  resetPrice: number = 0;
 
   group: string = '';
   name: string = '';
   type: string = '';
   quantity: number = 0;
   price: number = 0;
+
+  
+  
 
   
 
@@ -99,8 +108,8 @@ export class FormComponent {
     this.name = '';
     this.type = '';
     }
-    this.quantity = 0;
-    this.price = 0;
+    this.quantity = this.resetPrice;
+    this.price = this.resetQuantity;
     this.quantityError=""
     this.priceError=""
   }
