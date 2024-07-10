@@ -16,7 +16,7 @@ export class NavbarComponent {
   logOut() {
     const pop = this.dialog.open(SureComponent, {
       width: '200px',
-      height: '100px',
+      height: '150px',
     });
 
     pop.disableClose = true;
