@@ -1,3 +1,7 @@
 button {
   margin-right: 5px;
 }
+
+mat-icon {
+  margin: 0px !important;
+}
