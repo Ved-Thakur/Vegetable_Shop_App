@@ -1,13 +1,13 @@
 <div class="search">
   <form>
     <mat-form-field>
-      <mat-label>Product Type</mat-label>
+      <mat-label>Search</mat-label>
       <input
         matInput
         type="text"
         name="type"
         [(ngModel)]="type"
-        (keyup)="filter()"
+        (keyup)="filter($event)"
       />
     </mat-form-field>
 
@@ -18,7 +18,7 @@
       color="accent"
       (click)="add()"
     >
-      <mat-icon>person_add</mat-icon>
+      <mat-icon>add</mat-icon>
     </button>
   </form>
 </div>

@@ -85,12 +85,9 @@ export class TableComponent {
     });
   }
 
-  filter() {
-    if (['regular', 'exotic', 'seasonal'].includes(this.type)) {
-      this.dataSource.filter = this.type;
-    } else {
-      this.dataSource.filter = '';
-    }
+  filter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
   buy(element: Product) {
