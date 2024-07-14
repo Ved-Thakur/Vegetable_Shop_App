@@ -1,5 +1,3 @@
-
-
 form {
   padding: 50px;
   display: flex;
@@ -11,10 +9,10 @@ form {
   justify-content: space-evenly;
 }
 
-.topRow{
+.topRow {
   display: flex;
 }
 
-#close{
+#close {
   margin-left: auto;
 }
