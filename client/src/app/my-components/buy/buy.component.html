@@ -1,15 +1,15 @@
 <form>
   <div class="topRow">
-    <h1>{{ name }}: {{ price | currency : "INR" }}</h1>
+    <h1>Enter details</h1>
     <button mat-raised-button color="warn" mat-dialog-close id="close">
       X
     </button>
   </div>
   <h1>available quantity: {{ available_quantity }}</h1>
-  <h2>select a valid quantity</h2>
 
+  <h1>{{ name }}: {{ price | currency : "INR" }}</h1>
   <mat-form-field>
-    <mat-label>{{ quantity_label }}</mat-label>
+    <mat-label id="quantity-label-input">{{ quantity_label }}</mat-label>
 
     <input
       type="number"

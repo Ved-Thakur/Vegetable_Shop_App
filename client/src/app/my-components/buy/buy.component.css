@@ -1,5 +1,5 @@
 form {
-  padding: 50px;
+  padding: 10px 50px 50px 50px;
   display: flex;
   flex-direction: column;
 }
@@ -14,5 +14,7 @@ form {
 }
 
 #close {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
