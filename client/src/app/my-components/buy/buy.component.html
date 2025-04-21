@@ -1,0 +1,35 @@
+<form>
+  <div class="topRow">
+    <h1>Enter details</h1>
+    <button mat-raised-button color="warn" mat-dialog-close id="close">
+      X
+    </button>
+  </div>
+  <h1>available quantity: {{ available_quantity }}</h1>
+
+  <h1>{{ name }}: {{ price | currency : "INR" }}</h1>
+  <mat-form-field>
+    <mat-label id="quantity-label-input">{{ quantity_label }}</mat-label>
+
+    <input
+      type="number"
+      matInput
+      name="quantity"
+      [(ngModel)]="quantity"
+      (blur)="updateErrorMessage()"
+    />
+  </mat-form-field>
+  <mat-error *ngIf="!isValid()"> {{ errorMessage }}</mat-error>
+  <h2 *ngIf="isValid()">{{ total_cost_label }}: {{ quantity * price }}</h2>
+  <div class="buttons">
+    <button
+      mat-raised-button
+      color="primary"
+      [mat-dialog-close]="quantity"
+      [disabled]="!isValid()"
+    >
+      OK
+    </button>
+    <button mat-raised-button color="accent" (click)="cancel()">cancel</button>
+  </div>
+</form>

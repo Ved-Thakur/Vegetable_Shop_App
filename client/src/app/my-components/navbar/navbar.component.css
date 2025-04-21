@@ -1,0 +1,10 @@
+.example-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.example-spacer {
+  flex: 0 0 auto;
+}

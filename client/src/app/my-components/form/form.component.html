@@ -1,0 +1,77 @@
+<form class="form" (ngSubmit)="onSubmit()" #form="ngForm">
+  <div class="topRow">
+    <h1 id="detailsLabel">Enter Details</h1>
+    <button mat-raised-button color="warn" mat-dialog-close id="close">
+      X
+    </button>
+  </div>
+  <mat-form-field>
+    <mat-label>Group</mat-label>
+    <mat-select name="group" [(ngModel)]="group" [disabled]="isEdit" required>
+      <mat-option value="vegetable">{{ vegetable_label }}</mat-option>
+      <mat-option value="fruit">{{ fruit_label }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      name="name"
+      [(ngModel)]="name"
+      [disabled]="isEdit"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select name="type" [(ngModel)]="type" [disabled]="isEdit" required>
+      <mat-option *ngFor="let option of options" [value]="option.value">{{
+        option.viewValue
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>{{ quantity_label }}</mat-label>
+    <input
+      matInput
+      [(ngModel)]="quantity"
+      name="quantity"
+      type="number"
+      (blur)="updateQuantityErrorMessage()"
+      required
+    />
+  </mat-form-field>
+  <mat-error *ngIf="!validQuantity()">{{ quantityError }}</mat-error>
+
+  <mat-form-field>
+    <mat-label>Price</mat-label>
+    <input
+      matInput
+      name="price"
+      type="number"
+      aria-disabled="true"
+      [(ngModel)]="price"
+      (blur)="updatePriceErrorMessage()"
+      required
+    />
+  </mat-form-field>
+  <mat-error *ngIf="!validPrice()">{{ priceError }}</mat-error>
+  <div class="buttons">
+    <button
+      mat-raised-button
+      [mat-dialog-close]="{
+          group: this.group,
+          name: this.name,
+          type: this.type,
+          quantity: this.quantity,
+          price: this.price,
+        }"
+      color="primary"
+      type="submit"
+      [disabled]="form.invalid || !isValid()"
+    >
+      OK
+    </button>
+    <button mat-raised-button color="accent" (click)="cancel()">cancel</button>
+  </div>
+</form>

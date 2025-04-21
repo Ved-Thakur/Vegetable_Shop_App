@@ -1,0 +1,20 @@
+form {
+  padding: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topRow {
+  display: flex;
+}
+
+#close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
