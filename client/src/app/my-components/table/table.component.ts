@@ -1,18 +1,19 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
-import { DataService } from 'src/app/services/data.service';
+import { DataService, Product } from 'src/app/services/data.service';
 import { BuyComponent } from '../buy/buy.component';
 import { FormComponent } from '../form/form.component';
 import { SureComponent } from '../sure/sure.component';
+import { filter, switchMap, tap } from 'rxjs';
 
-interface Product {
-  group: string;
-  name: string;
-  type: string;
-  quantity: number;
-  price: number;
-}
+// interface Product {
+//   group: string;
+//   name: string;
+//   type: string;
+//   quantity: number;
+//   price: number;
+// }
 
 @Component({
   selector: 'app-table',
@@ -26,6 +27,7 @@ export class TableComponent {
   type: string = '';
 
   dataSource = new MatTableDataSource<Product>();
+  data: Product[];
   displayedColumns: string[] = [
     'group',
     'name',
@@ -36,24 +38,31 @@ export class TableComponent {
   ];
 
   ngOnInit(): void {
-    this.dataSource.data = this.dataService.data;
+    this.dataService.getAll().subscribe({
+      next: (products: Product[]) => {
+        this.data = products;
+        this.dataSource.data = this.data;
+      },
+    });
   }
 
   delete(element: Product) {
-    const pop = this.dialog.open(SureComponent, {
-      width: '200px',
-      height: '150px',
-    });
-
-    pop.disableClose = true;
-    pop.afterClosed().subscribe((res) => {
-      if (res) {
-        const index = this.dataSource.data.indexOf(element);
-        this.dataSource.data.splice(index, 1);
-        this.dataService.storeData();
-        this.dataSource.filter = '';
-      }
-    });
+    this.dialog
+      .open(SureComponent, {
+        width: '200px',
+        height: '150px',
+      })
+      .afterClosed()
+      .pipe(
+        filter((res) => !!res),
+        switchMap(() => this.dataService.delete(element.id)),
+        switchMap(() => this.dataService.getAll())
+      )
+      .subscribe({
+        next: (data) => {
+          this.dataSource.data = data;
+        },
+      });
   }
 
   add() {
@@ -61,13 +70,16 @@ export class TableComponent {
       data: { isEdit: false },
     });
     pop.disableClose = true;
-    pop.afterClosed().subscribe((res) => {
-      if (res) {
-        this.dataSource.data.push(res);
-        this.dataService.storeData();
-        this.dataSource.filter = '';
-      }
-    });
+    pop
+      .afterClosed()
+      .pipe(
+        filter((res) => !!res),
+        switchMap((res) => this.dataService.create(res)),
+        switchMap(() => this.dataService.getAll())
+      )
+      .subscribe({
+        next: (data) => (this.dataSource.data = data),
+      });
   }
 
   edit(element: Product) {
@@ -75,14 +87,18 @@ export class TableComponent {
       data: { isEdit: true, rowData: element },
     });
 
-    pop.afterClosed().subscribe((res) => {
-      if (res) {
-        const index = this.dataSource.data.indexOf(element);
-        this.dataSource.data[index] = res;
-        this.dataService.storeData();
-        this.dataSource.filter = '';
-      }
-    });
+    pop
+      .afterClosed()
+      .pipe(
+        filter((res) => !!res),
+        switchMap((res) => this.dataService.update(res)),
+        switchMap(() => this.dataService.getAll())
+      )
+      .subscribe({
+        next: (data) => {
+          this.dataSource.data = data;
+        },
+      });
   }
 
   filter(event: Event) {
@@ -98,11 +114,22 @@ export class TableComponent {
       data: { element: element },
     });
     pop.disableClose = true;
-    pop.afterClosed().subscribe((res) => {
-      if (res) {
-        this.dataSource.data[index]['quantity'] -= res;
-        this.dataService.storeData();
-      }
-    });
+    pop
+      .afterClosed()
+      .pipe(
+        filter((res) => !!res),
+        switchMap((res) =>
+          this.dataService.update({
+            ...element,
+            quantity: element.quantity - res,
+          })
+        ),
+        switchMap(() => this.dataService.getAll())
+      )
+      .subscribe({
+        next: (data) => {
+          this.dataSource.data = data;
+        },
+      });
   }
 }

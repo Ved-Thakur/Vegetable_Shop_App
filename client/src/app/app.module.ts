@@ -26,6 +26,7 @@ import { SellerComponent } from './my-components/seller/seller.component';
 import { SureComponent } from './my-components/sure/sure.component';
 import { TableComponent } from './my-components/table/table.component';
 import { DataService } from './services/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { DataService } from './services/data.service';
     MatDialogModule,
     ReactiveFormsModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
