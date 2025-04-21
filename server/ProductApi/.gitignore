@@ -1,0 +1,14 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+.vscode/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp

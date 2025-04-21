@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\acer\\source\\repos\\ProductApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\source\\repos\\productapi\\productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductApi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:15:46.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductApi\\Services\\ProductService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:08:43.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductApi.csproj",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\ProductApi.csproj",
+              "RelativeDocumentMoniker": "ProductApi\\ProductApi.csproj",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\ProductApi.csproj",
+              "RelativeToolTip": "ProductApi\\ProductApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-21T11:18:51.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Program.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Program.cs",
+              "RelativeToolTip": "ProductApi\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T14:43:17.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductContext.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Models\\ProductContext.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Models\\ProductContext.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Models\\ProductContext.cs",
+              "RelativeToolTip": "ProductApi\\Models\\ProductContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T14:27:45.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\Models\\Product.cs",
+              "RelativeToolTip": "ProductApi\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:52:59.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ProductApi\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\acer\\source\\repos\\ProductApi\\ProductApi\\WeatherForecast.cs",
+              "RelativeToolTip": "ProductApi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:48:41.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
