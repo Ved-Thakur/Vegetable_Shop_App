@@ -1,14 +1,52 @@
 # .NET Core
+# Build Folders
 bin/
 obj/
+
+# Visual Studio files
 *.user
-*.userosscache
 *.suo
-*.userprefs
-.vs/
+*.userosscache
+*.sln.docstates
+
+# VS Code settings folder
 .vscode/
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+
+# Rider IDE files
+.idea/
+
+# NuGet packages folder
+packages/
+
+# Logs
+*.log
+
+# Entity Framework Migrations (optional: if you want to ignore migrations, else remove these)
+# Migrations/
+
+# appsettings files - exclude your development secrets/configuration
+appsettings.Development.json
+appsettings.Local.json
+
+# User secrets (if using Secret Manager)
+secrets.json
+
+# Publish folder
+publish/
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Others
+*.nupkg
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+
+# Dotnet tools
+.tools/
+
+# ASP.NET Scaffolding files
+ScaffoldingReadMe.txt
