@@ -16,7 +16,7 @@ export interface Product {
 })
 export class DataService {
   key = 'productData';
-  private apiUrl = 'https://localhost:7009/api/products';
+  private apiUrl = 'https://vegetable-shop-app.onrender.com/api/products';
 
   constructor(private http: HttpClient) {}
 
