@@ -64,7 +64,7 @@ export class DataService {
   // return data;
   // }
 
-  storeData(data: Product[]): void {
-    localStorage.setItem(this.key, JSON.stringify(data));
-  }
+  // storeData(data: Product[]): void {
+  //   localStorage.setItem(this.key, JSON.stringify(data));
+  // }
 }

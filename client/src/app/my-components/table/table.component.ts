@@ -6,6 +6,8 @@ import { BuyComponent } from '../buy/buy.component';
 import { FormComponent } from '../form/form.component';
 import { SureComponent } from '../sure/sure.component';
 import { filter, switchMap, tap } from 'rxjs';
+import { MatSort } from '@angular/material/sort';
+import { ViewChild, AfterViewInit } from '@angular/core';
 
 // interface Product {
 //   group: string;
@@ -44,6 +46,12 @@ export class TableComponent {
         this.dataSource.data = this.data;
       },
     });
+  }
+
+  @ViewChild(MatSort) sort!: MatSort;
+
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
   }
 
   delete(element: Product) {

@@ -1,8 +1,10 @@
+import { environment } from 'src/environments/environment';
+
 const Constants = {
-  SELLER_USERNAME: 'seller1234',
-  SELLER_PASSWORD: '1234',
-  CUSTOMER_USERNAME: 'customer1234',
-  CUSTOMER_PASSWORD: '1234',
+  SELLER_USERNAME: environment.SELLER_USERNAME,
+  SELLER_PASSWORD: environment.SELLER_PASSWORD,
+  CUSTOMER_USERNAME: environment.CUSTOMER_USERNAME,
+  CUSTOMER_PASSWORD: environment.CUSTOMER_PASSWORD,
   Total_COST_LABEL: 'Total Cost',
   QUANTITY_LABEL: 'Quantity',
   VEGETABLE_LABEL: 'Vegetable',

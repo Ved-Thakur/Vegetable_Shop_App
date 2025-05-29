@@ -27,6 +27,7 @@ import { SureComponent } from './my-components/sure/sure.component';
 import { TableComponent } from './my-components/table/table.component';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatIconModule,
     HttpClientModule,
+    MatSortModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
