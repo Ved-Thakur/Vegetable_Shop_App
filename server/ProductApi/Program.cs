@@ -14,9 +14,13 @@ builder.Services.AddScoped<ProductService>();
 
 //builder.Services.AddDbContext<ProductContext>(opt =>
 //    opt.UseInMemoryDatabase("Product"));
+
+//builder.Services.AddDbContext<ProductContext>(options =>
+//    options.UseMySql("server=localhost;database=shop;user=root;password=vednehat;",
+//        new MySqlServerVersion(new Version(8, 0, 34))));
+
 builder.Services.AddDbContext<ProductContext>(options =>
-    options.UseMySql("server=localhost;database=shop;user=root;password=vednehat;",
-        new MySqlServerVersion(new Version(8, 0, 34))));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddCors(options =>
 {
