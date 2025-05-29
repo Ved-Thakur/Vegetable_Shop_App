@@ -22,11 +22,21 @@ builder.Services.AddScoped<ProductService>();
 builder.Services.AddDbContext<ProductContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAngular", policy =>
+//    {
+//        policy.WithOrigins("http://localhost:4200")
+//              .AllowAnyHeader()
+//              .AllowAnyMethod();
+//    });
+//});
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngular", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -45,7 +55,8 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-app.UseCors("AllowAngular");
+//app.UseCors("AllowAngular");
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
