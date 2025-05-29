@@ -32,39 +32,11 @@ export class DataService {
     return this.http.post<Product>(this.apiUrl, product);
   }
 
-  update(product: Product): Observable<Product> {
-    return this.http.put<Product>(`${this.apiUrl}/${product.id}`, product);
+  update(product: Product, id: number): Observable<Product> {
+    return this.http.put<Product>(`${this.apiUrl}/${id}`, { ...product, id });
   }
 
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
-
-  // retrieveData(): Product[] {
-  // const storedData = localStorage.getItem(this.key);
-  // let data = storedData ? JSON.parse(storedData) : [];
-  // if (data.length === 0) {
-  //   data = [
-  //     {
-  //       group: 'vegetable',
-  //       name: 'dummy1',
-  //       type: 'exotic',
-  //       quantity: 100,
-  //       price: 100,
-  //     },
-  //     {
-  //       group: 'fruit',
-  //       name: 'dummy2',
-  //       type: 'regular',
-  //       quantity: 100,
-  //       price: 100,
-  //     },
-  //   ];
-  // }
-  // return data;
-  // }
-
-  // storeData(data: Product[]): void {
-  //   localStorage.setItem(this.key, JSON.stringify(data));
-  // }
 }

@@ -24,7 +24,7 @@ ENV ASPNETCORE_URLS=http://+:8080
 # Copy published files
 COPY --from=build /app/out .
 
-# Expose port 8080 (NOT 80)
+# Expose port 8080 
 EXPOSE 8080
 
 # Run the app

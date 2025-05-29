@@ -99,7 +99,7 @@ export class TableComponent {
       .afterClosed()
       .pipe(
         filter((res) => !!res),
-        switchMap((res) => this.dataService.update(res)),
+        switchMap((res) => this.dataService.update(res, element.id)),
         switchMap(() => this.dataService.getAll())
       )
       .subscribe({
@@ -127,10 +127,13 @@ export class TableComponent {
       .pipe(
         filter((res) => !!res),
         switchMap((res) =>
-          this.dataService.update({
-            ...element,
-            quantity: element.quantity - res,
-          })
+          this.dataService.update(
+            {
+              ...element,
+              quantity: element.quantity - res,
+            },
+            element.id
+          )
         ),
         switchMap(() => this.dataService.getAll())
       )
