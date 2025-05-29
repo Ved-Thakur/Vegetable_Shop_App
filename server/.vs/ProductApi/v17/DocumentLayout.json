@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|c:\\users\\acer\\onedrive\\desktop\\angular\\vegetable-shop-app\\server\\productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{868509D9-851A-4F5B-82D0-22F4CCB367D0}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ProductApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\appsettings.Development.json",
+              "RelativeToolTip": "ProductApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-29T08:04:04.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "ProductApi\\Controllers\\ProductController.cs",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "ProductApi\\Services\\ProductService.cs",
@@ -66,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProductApi.csproj",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\ProductApi.csproj",
               "RelativeDocumentMoniker": "ProductApi\\ProductApi.csproj",
@@ -78,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Program.cs",
               "RelativeDocumentMoniker": "ProductApi\\Program.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ProductContext.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Models\\ProductContext.cs",
               "RelativeDocumentMoniker": "ProductApi\\Models\\ProductContext.cs",
@@ -99,23 +116,25 @@
               "RelativeToolTip": "ProductApi\\Models\\ProductContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:27:45.21Z"
+              "WhenOpened": "2025-04-20T14:27:45.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Models\\Product.cs",
               "RelativeDocumentMoniker": "ProductApi\\Models\\Product.cs",
               "ToolTip": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\Models\\Product.cs",
               "RelativeToolTip": "ProductApi\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:52:59.589Z"
+              "WhenOpened": "2025-04-20T13:52:59.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\Desktop\\angular\\vegetable-shop-app\\server\\ProductApi\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "ProductApi\\WeatherForecast.cs",
